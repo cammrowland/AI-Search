@@ -1,0 +1,5 @@
+{
+  "name": "AI Web Access Report",
+  "description": "An interactive visualization of the current state of AI web crawler access, blocking policies, and the implications for e-commerce and marketing.",
+  "requestFramePermissions": []
+}
