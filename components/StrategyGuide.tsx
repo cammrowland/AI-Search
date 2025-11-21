@@ -38,7 +38,7 @@ export const StrategyGuide: React.FC = () => {
       </div>
 
       {/* Content Area */}
-      <div className="lg:w-2/3 bg-brand-card border border-slate-700 rounded-2xl p-8 shadow-xl animate-in fade-in slide-in-from-right-4 duration-300 key={activeId}">
+      <div className="lg:w-2/3 bg-brand-card border border-slate-700 rounded-2xl p-8 shadow-xl animate-slide-in key={activeId}">
         <div className="flex items-center gap-3 mb-6">
            <div className="p-3 rounded-lg bg-slate-800 text-brand-accent">
               {React.createElement(icons[activePillar.iconName], { size: 32 })}

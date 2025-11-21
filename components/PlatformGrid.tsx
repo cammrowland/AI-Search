@@ -57,7 +57,7 @@ export const PlatformGrid: React.FC = () => {
         {displayedPlatforms.map((platform) => {
           const Icon = iconMap[platform.iconName] || Globe;
           return (
-            <div key={platform.id} className="bg-brand-card border border-slate-700 rounded-xl p-5 hover:border-slate-500 transition-colors group flex flex-col h-full animate-in fade-in duration-500">
+            <div key={platform.id} className="bg-brand-card border border-slate-700 rounded-xl p-5 hover:border-slate-500 transition-colors group flex flex-col h-full animate-fade-in">
               <div className="flex justify-between items-start mb-4">
                 <div className="p-3 bg-slate-800 rounded-lg text-white group-hover:bg-slate-700 transition-colors">
                   <Icon size={24} />

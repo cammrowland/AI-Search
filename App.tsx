@@ -179,22 +179,29 @@ const App: React.FC = () => {
       {/* Simulator & Scenarios */}
       <section id="scenarios" className="py-20 bg-slate-900 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-             <div>
-               <h2 className="text-3xl font-bold text-white mb-6">The Visibility Gap</h2>
-               <p className="text-slate-400 mb-8">
+          
+          {/* Visibility Simulator Block */}
+          <div className="mb-24 max-w-5xl mx-auto">
+             <div className="text-center mb-10">
+               <h2 className="text-3xl font-bold text-white mb-4">The Visibility Gap</h2>
+               <p className="text-slate-400 max-w-2xl mx-auto text-lg">
                  See how product availability changes when viewed through the lens of an AI assistant versus a human browser.
                </p>
-               <VisibilitySimulator />
              </div>
-             <div className="flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Three Scenarios for Brands</h3>
-                <p className="text-slate-400 mb-8">
+             <VisibilitySimulator />
+          </div>
+
+          {/* Scenarios Block */}
+          <div className="border-t border-slate-800/50 pt-24">
+             <div className="text-center mb-12">
+                <h3 className="text-3xl font-bold text-white mb-4">Three Scenarios for Brands</h3>
+                <p className="text-slate-400 max-w-2xl mx-auto text-lg">
                   As AI intermediaries take over, brands fall into one of three categories. Most are currently at risk.
                 </p>
-                <BrandScenarios />
              </div>
+             <BrandScenarios />
           </div>
+
         </div>
       </section>
 
