@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ShieldAlert, Menu, X, ChevronRight, Lock, Server, Zap } from 'lucide-react';
-import { StatsChart } from './components/StatsChart';
-import { PlatformGrid } from './components/PlatformGrid';
-import { VisibilitySimulator } from './components/VisibilitySimulator';
-import { StrategyGuide } from './components/StrategyGuide';
-import { BrandScenarios } from './components/BrandScenarios';
-import { RoadmapTimeline } from './components/RoadmapTimeline';
-import { PUBLISHER_BLOCK_LIST } from './constants';
+import { StatsChart } from './components/StatsChart.tsx';
+import { PlatformGrid } from './components/PlatformGrid.tsx';
+import { VisibilitySimulator } from './components/VisibilitySimulator.tsx';
+import { StrategyGuide } from './components/StrategyGuide.tsx';
+import { BrandScenarios } from './components/BrandScenarios.tsx';
+import { RoadmapTimeline } from './components/RoadmapTimeline.tsx';
+import { PUBLISHER_BLOCK_LIST } from './constants.ts';
 
 const App: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -181,7 +181,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           
           {/* Visibility Simulator Block */}
-          <div className="mb-24 max-w-5xl mx-auto">
+          <div className="mb-24 w-full">
              <div className="text-center mb-10">
                <h2 className="text-3xl font-bold text-white mb-4">The Visibility Gap</h2>
                <p className="text-slate-400 max-w-2xl mx-auto text-lg">

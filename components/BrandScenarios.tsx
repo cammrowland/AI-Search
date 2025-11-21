@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertOctagon, AlertTriangle, CheckCircle2 } from 'lucide-react';
-import { SCENARIOS } from '../constants';
+import { SCENARIOS } from '../constants.ts';
 
 export const BrandScenarios: React.FC = () => {
   const icons = {

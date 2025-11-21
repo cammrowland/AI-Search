@@ -1,6 +1,6 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { BLOCK_RATES } from '../constants';
+import { BLOCK_RATES } from '../constants.ts';
 
 export const StatsChart: React.FC = () => {
   return (

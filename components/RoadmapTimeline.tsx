@@ -1,5 +1,5 @@
 import React from 'react';
-import { ROADMAP_PHASES } from '../constants';
+import { ROADMAP_PHASES } from '../constants.ts';
 
 export const RoadmapTimeline: React.FC = () => {
   return (

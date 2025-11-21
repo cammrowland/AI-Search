@@ -4,8 +4,8 @@ import {
   Target, Gem, Facebook, Twitter, Linkedin, Youtube, Instagram, Tv, FileText, BarChart3, Cpu, 
   TrendingUp, Film, Music, ChevronDown
 } from 'lucide-react';
-import { PLATFORMS } from '../constants';
-import { StatusBadge } from './StatusBadge';
+import { PLATFORMS } from '../constants.ts';
+import { StatusBadge } from './StatusBadge.tsx';
 
 const iconMap: Record<string, any> = {
   ShoppingCart, Store, ShoppingBag, Newspaper, MessageSquare, Video, Tag, Cloud, Globe,

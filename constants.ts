@@ -1,4 +1,4 @@
-import { PlatformData, StatData, ScenarioData, StrategyPillar, RoadmapPhase } from './types';
+import { PlatformData, StatData, ScenarioData, StrategyPillar, RoadmapPhase } from './types.ts';
 
 export const BLOCK_RATES: StatData[] = [
   { name: 'GPTBot (OpenAI)', value: 35.7, color: '#ef4444' },
@@ -318,6 +318,18 @@ export const STRATEGY_PILLARS: StrategyPillar[] = [
       "Collect zero-party data (preferences) directly."
     ],
     tools: ["Salesforce", "HubSpot", "Klaviyo"]
+  },
+  {
+    id: "agentic",
+    title: "Agentic Readiness",
+    iconName: "Bot",
+    summary: "Prepare for autonomous AI agents that research and buy on behalf of consumers.",
+    actions: [
+        "Deploy agent-ready APIs for inventory and pricing.",
+        "Enable agent-to-agent transaction capabilities.",
+        "Explore proprietary brand agents for direct engagement."
+    ],
+    tools: ["BigCommerce", "Shopify", "Mirakl"]
   }
 ];
 

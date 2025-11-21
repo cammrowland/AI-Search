@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Activity, Zap, Share2, Database, ArrowRight, Check } from 'lucide-react';
-import { STRATEGY_PILLARS } from '../constants';
+import { Activity, Zap, Share2, Database, ArrowRight, Check, Bot } from 'lucide-react';
+import { STRATEGY_PILLARS } from '../constants.ts';
 
 const icons: Record<string, any> = {
-  Activity, Zap, Share2, Database
+  Activity, Zap, Share2, Database, Bot
 };
 
 export const StrategyGuide: React.FC = () => {
@@ -16,7 +16,7 @@ export const StrategyGuide: React.FC = () => {
       {/* Navigation Tabs */}
       <div className="lg:w-1/3 space-y-2">
         {STRATEGY_PILLARS.map(pillar => {
-          const Icon = icons[pillar.iconName];
+          const Icon = icons[pillar.iconName] || Activity;
           const isActive = activeId === pillar.id;
           
           return (
@@ -41,7 +41,7 @@ export const StrategyGuide: React.FC = () => {
       <div className="lg:w-2/3 bg-brand-card border border-slate-700 rounded-2xl p-8 shadow-xl animate-slide-in key={activeId}">
         <div className="flex items-center gap-3 mb-6">
            <div className="p-3 rounded-lg bg-slate-800 text-brand-accent">
-              {React.createElement(icons[activePillar.iconName], { size: 32 })}
+              {React.createElement(icons[activePillar.iconName] || Activity, { size: 32 })}
            </div>
            <h3 className="text-3xl font-bold text-white">{activePillar.title}</h3>
         </div>

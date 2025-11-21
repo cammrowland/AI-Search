@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertTriangle, CheckCircle, Lock } from 'lucide-react';
-import { AccessStatus } from '../types';
+import { AccessStatus } from '../types.ts';
 
 interface Props {
   status: AccessStatus;
